@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/musicmusculol.ogg-1870f6f4e78a3ba833ba9bc1fca2e402.oggstr"
+
+[deps]
+
+source_file="res://AutoLoad/Music&VideoplayerInProcess/Musics/musicmusculol.ogg"
+dest_files=[ "res://.import/musicmusculol.ogg-1870f6f4e78a3ba833ba9bc1fca2e402.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

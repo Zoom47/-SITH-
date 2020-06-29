@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/OpenTreasure.wav-93d72c266b9161c0bd8ce698ced152bf.sample"
+
+[deps]
+
+source_file="res://AutoLoad/Music&VideoplayerInProcess/Noises/OpenTreasure.wav"
+dest_files=[ "res://.import/OpenTreasure.wav-93d72c266b9161c0bd8ce698ced152bf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

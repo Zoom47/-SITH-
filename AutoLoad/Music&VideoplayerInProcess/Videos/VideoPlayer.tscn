@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AutoLoad/Music&VideoplayerInProcess/Videos/VideoPlayer.gd" type="Script" id=1]
+[ext_resource path="res://AutoLoad/Music&VideoplayerInProcess/Videos/0001-0250.ogv" type="VideoStream" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+stream = ExtResource( 2 )
+autoplay = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 408.0
+margin_top = 152.0
+margin_right = 504.0
+margin_bottom = 192.0
+text = "Godot is Cool"
+[connection signal="finished" from="VideoPlayer" to="VideoPlayer" method="_on_VideoPlayer_finished"]
