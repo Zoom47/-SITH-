@@ -1,0 +1,223 @@
+[gd_scene load_steps=44 format=2]
+
+[ext_resource path="res://TileSet/Tiles/Level_13/Tile5_Whales.png" type="Texture" id=1]
+[ext_resource path="res://TileSet/Tiles/Level_15/Tile2_Escaped.png" type="Texture" id=2]
+[ext_resource path="res://TileSet/Tiles/Level_15/Tile3_Escaped.png" type="Texture" id=3]
+[ext_resource path="res://TileSet/Tiles/Level_2/Tile1_Stranger.png" type="Texture" id=4]
+[ext_resource path="res://TileSet/Tiles/Level_10/Tile4_Damocles.png" type="Texture" id=5]
+[ext_resource path="res://TileSet/Tiles/Test/rpgTile184.png" type="Texture" id=6]
+[ext_resource path="res://TileSet/Tiles/Test/rpgTile156.png" type="Texture" id=7]
+[ext_resource path="res://TileSet/Tiles/Level_14/Tile2_Berceau.png" type="Texture" id=8]
+[ext_resource path="res://TileSet/Tiles/Level_14/Tile3_Berceau.png" type="Texture" id=9]
+[ext_resource path="res://TileSet/Tiles/Level_2/Tile2_Stranger.png" type="Texture" id=10]
+[ext_resource path="res://TileSet/Tiles/Level_2/Tile2_Rule.png" type="Texture" id=11]
+[ext_resource path="res://TileSet/Tiles/Level_13/Tile1_Whales.png" type="Texture" id=12]
+[ext_resource path="res://TileSet/Tiles/Level_13/Tile2_Whales.png" type="Texture" id=13]
+[ext_resource path="res://TileSet/Tiles/Level_12/Tile2_Open.png" type="Texture" id=14]
+[ext_resource path="res://TileSet/Tiles/Level_11/Tile1_Vertigo.png" type="Texture" id=15]
+[ext_resource path="res://TileSet/Tiles/Test/rpgTile155.png" type="Texture" id=16]
+[ext_resource path="res://TileSet/Tiles/Test/rpgTile019.png" type="Texture" id=17]
+[ext_resource path="res://TileSet/Tiles/Level_14/Tile1_Berceau.png" type="Texture" id=18]
+[ext_resource path="res://TileSet/Tiles/Level_13/Tile6_Whales.png" type="Texture" id=19]
+[ext_resource path="res://TileSet/Tiles/Level_15/Tile1_Escaped.png" type="Texture" id=20]
+[ext_resource path="res://TileSet/Tiles/Level_12/Tile1_Open.png" type="Texture" id=21]
+[ext_resource path="res://TileSet/Tiles/Level_10/Tile1_Damocles.png" type="Texture" id=22]
+[ext_resource path="res://TileSet/Tiles/Test/rpgTile179.png" type="Texture" id=23]
+[ext_resource path="res://TileSet/Tiles/Level_1/Tile2_Way.png" type="Texture" id=24]
+[ext_resource path="res://TileSet/Tiles/Level_13/Tile3_Whales.png" type="Texture" id=25]
+[ext_resource path="res://TileSet/Tiles/Level_13/Tile4_Whales.png" type="Texture" id=26]
+[ext_resource path="res://TileSet/Tiles/Level_11/Ground1_Vertigo.pmp.png" type="Texture" id=27]
+[ext_resource path="res://TileSet/Tiles/Level_3/Tile5_Rule.png" type="Texture" id=28]
+[ext_resource path="res://TileSet/Tiles/Level_8/Tile4_Sandstorm.png" type="Texture" id=29]
+[ext_resource path="res://TileSet/Tiles/Level_8/Tile3_Sandstorm.png" type="Texture" id=30]
+[ext_resource path="res://TileSet/Tiles/Level_3/Tile3_Rule.png" type="Texture" id=31]
+[ext_resource path="res://TileSet/Tiles/Level_7/Tile3_Desert.png" type="Texture" id=32]
+[ext_resource path="res://TileSet/Tiles/Level_7/Tile1_Desert.png" type="Texture" id=33]
+[ext_resource path="res://TileSet/Tiles/Level_7/Tile2_Desert.png" type="Texture" id=34]
+[ext_resource path="res://TileSet/Tiles/Level_3/Tile7_Rule.png" type="Texture" id=35]
+[ext_resource path="res://TileSet/Tiles/Level_3/Tile4_Rule.png" type="Texture" id=36]
+[ext_resource path="res://TileSet/Tiles/Level_3/Tile1_Rule.png" type="Texture" id=37]
+[ext_resource path="res://TileSet/Tiles/Level_3/Tile6_Rule.png" type="Texture" id=38]
+[ext_resource path="res://TileSet/Tiles/Level_7/Tile4_Desert.png" type="Texture" id=39]
+[ext_resource path="res://TileSet/Tiles/Level_7/Tile5_Desert.png" type="Texture" id=40]
+[ext_resource path="res://TileSet/Tiles/Test/rpgTile199.png" type="Texture" id=54]
+[ext_resource path="res://TileSet/Tiles/Test/rpgTile216.png" type="Texture" id=55]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 17 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="TileSet" type="Node2D"]
+
+[node name="rpgTile019" type="AnimatedSprite" parent="."]
+position = Vector2( 96, 95.2262 )
+frames = SubResource( 1 )
+playing = true
+
+[node name="rpgTile155" type="Sprite" parent="."]
+position = Vector2( 352, 160 )
+texture = ExtResource( 16 )
+
+[node name="rpgTile156" type="Sprite" parent="."]
+position = Vector2( 416, 160 )
+texture = ExtResource( 7 )
+
+[node name="rpgTile179" type="Sprite" parent="."]
+position = Vector2( 736, 96 )
+texture = ExtResource( 23 )
+
+[node name="rpgTile184" type="Sprite" parent="."]
+position = Vector2( 480, 32 )
+texture = ExtResource( 6 )
+
+[node name="rpgTile199" type="Sprite" parent="."]
+position = Vector2( 736, 160 )
+texture = ExtResource( 54 )
+
+[node name="rpgTile216" type="Sprite" parent="."]
+position = Vector2( 608, 32 )
+texture = ExtResource( 55 )
+
+[node name="1)Way_Tile2" type="Sprite" parent="."]
+position = Vector2( -112.584, 471.473 )
+texture = ExtResource( 24 )
+
+[node name="10)Damocles_Tile1" type="Sprite" parent="."]
+position = Vector2( -267.708, 542.621 )
+texture = ExtResource( 22 )
+
+[node name="10)Damocles_Tile4" type="Sprite" parent="."]
+position = Vector2( -124.247, 599.772 )
+texture = ExtResource( 5 )
+
+[node name="Ground1_Vertigopmp" type="Sprite" parent="."]
+position = Vector2( -305.031, 330.345 )
+texture = ExtResource( 27 )
+
+[node name="11)Vertigo_Tile2" type="Sprite" parent="."]
+position = Vector2( -292.201, 427.152 )
+texture = ExtResource( 15 )
+
+[node name="12)Open_Tile1" type="Sprite" parent="."]
+position = Vector2( -163.903, 379.332 )
+texture = ExtResource( 21 )
+
+[node name="12)Open_Tile2" type="Sprite" parent="."]
+position = Vector2( -230.385, 660.422 )
+texture = ExtResource( 14 )
+
+[node name="13)Whales_Tile1" type="Sprite" parent="."]
+position = Vector2( -293.633, 151.568 )
+texture = ExtResource( 12 )
+
+[node name="13)Whales_Tile2" type="Sprite" parent="."]
+position = Vector2( 94.3313, 561.631 )
+texture = ExtResource( 13 )
+
+[node name="13)Whales_Tile3" type="Sprite" parent="."]
+position = Vector2( 177.817, 437.63 )
+texture = ExtResource( 25 )
+
+[node name="13)Whales_Tile4" type="Sprite" parent="."]
+position = Vector2( -21.0757, 303.807 )
+texture = ExtResource( 26 )
+
+[node name="13)Whales_Tile5" type="Sprite" parent="."]
+position = Vector2( -124.205, 205.588 )
+texture = ExtResource( 1 )
+
+[node name="13)Whales_Tile6" type="Sprite" parent="."]
+position = Vector2( 183.956, 641.434 )
+texture = ExtResource( 19 )
+
+[node name="14)Berceau_Tile1" type="Sprite" parent="."]
+position = Vector2( -232.246, -87.84 )
+texture = ExtResource( 18 )
+
+[node name="14)Berceau_Tile2" type="Sprite" parent="."]
+position = Vector2( -49.3136, -102.573 )
+texture = ExtResource( 8 )
+
+[node name="14)Berceau_Tile3" type="Sprite" parent="."]
+position = Vector2( -316.959, -188.514 )
+texture = ExtResource( 9 )
+
+[node name="15)Escaped_Tile1" type="Sprite" parent="."]
+position = Vector2( 1053.19, -107.484 )
+texture = ExtResource( 20 )
+
+[node name="15)Escaped_Tile2" type="Sprite" parent="."]
+position = Vector2( 1038.46, 435.174 )
+texture = ExtResource( 2 )
+
+[node name="15)Escaped_Tile3" type="Sprite" parent="."]
+position = Vector2( 930.418, 555.492 )
+texture = ExtResource( 3 )
+
+[node name="2)Stranger_Tile1" type="Sprite" parent="."]
+position = Vector2( 570.692, 533.393 )
+texture = ExtResource( 4 )
+
+[node name="3)Rule_Tile2" type="Sprite" parent="."]
+position = Vector2( 439.324, -152.91 )
+texture = ExtResource( 11 )
+
+[node name="2)Stranger_Tile2" type="Sprite" parent="."]
+position = Vector2( 1006.54, 224.004 )
+texture = ExtResource( 10 )
+
+[node name="3)Rule_Tile1" type="Sprite" parent="."]
+position = Vector2( 779.406, -135.722 )
+texture = ExtResource( 37 )
+
+[node name="3)Rule_Tile3" type="Sprite" parent="."]
+position = Vector2( 575.603, 340.639 )
+texture = ExtResource( 31 )
+
+[node name="3)Rule_Tile4" type="Sprite" parent="."]
+position = Vector2( 236.748, -87.84 )
+texture = ExtResource( 36 )
+
+[node name="3)Rule_Tile5" type="Sprite" parent="."]
+position = Vector2( 400.037, 365.194 )
+texture = ExtResource( 28 )
+
+[node name="3)Rule_Tile6" type="Sprite" parent="."]
+position = Vector2( 899.724, 64.399 )
+texture = ExtResource( 38 )
+
+[node name="3)Rule_Tile7" type="Sprite" parent="."]
+position = Vector2( 1148.95, 179.806 )
+texture = ExtResource( 35 )
+
+[node name="7)Desert_Tile1" type="Sprite" parent="."]
+position = Vector2( 451.602, 656.166 )
+texture = ExtResource( 33 )
+
+[node name="7)Desert_Tile2" type="Sprite" parent="."]
+position = Vector2( 811.328, 572.681 )
+texture = ExtResource( 34 )
+
+[node name="7)Desert_Tile3" type="Sprite" parent="."]
+position = Vector2( 1112.12, 632.839 )
+texture = ExtResource( 32 )
+
+[node name="8)Sandstorm_Tile3" type="Sprite" parent="."]
+position = Vector2( 115.203, -215.524 )
+texture = ExtResource( 30 )
+
+[node name="8)Sandstorm_Tile4" type="Sprite" parent="."]
+position = Vector2( 218.332, 266.975 )
+texture = ExtResource( 29 )
+
+[node name="7)Desert_Tile4" type="Sprite" parent="."]
+position = Vector2( 64, 904 )
+texture = ExtResource( 39 )
+
+[node name="7)Desert_Tile5" type="Sprite" parent="."]
+position = Vector2( -176, 912 )
+texture = ExtResource( 40 )
