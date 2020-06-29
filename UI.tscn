@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://InventoryGrid.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 72.0
+margin_top = 280.0
+margin_right = 112.0
+margin_bottom = 320.0
+rect_scale = Vector2( 3.04458, 5.48585 )
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.5105
+margin_top = 10.2081
+margin_right = -9.48952
+margin_bottom = -9.7919
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

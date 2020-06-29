@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Screens/bison.png" type="Texture" id=1]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.2, 0.4, 0.6, 0.67619, 0.8, 1 )
+colors = PoolColorArray( 0.890625, 0.720154, 0.720154, 1, 0.054902, 0.572549, 0.52402, 1, 0.902344, 0.0740204, 0.0740204, 1, 0.545044, 0.568352, 0.917969, 1, 0.109009, 0.148094, 0.734375, 1, 0.636719, 0.0870514, 0.202997, 1, 0.527344, 0.442886, 0.520086, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+
+[sub_resource type="ParticlesMaterial" id=4]
+next_pass = SubResource( 3 )
+emission_shape = 2
+emission_box_extents = Vector3( 100, 100, 500 )
+flag_disable_z = true
+gravity = Vector3( 0, 0, 0 )
+angular_velocity = 200.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.6
+orbit_velocity_random = 1.0
+radial_accel = -100.0
+radial_accel_random = 1.0
+angle = -300.0
+color_ramp = SubResource( 2 )
+hue_variation = 0.42
+hue_variation_random = 1.0
+
+[node name="Particles2D" type="Particles2D"]
+amount = 40
+lifetime = 8.69
+explosiveness = 1.0
+visibility_rect = Rect2( -642.261, -641.08, 1282.66, 1283.92 )
+process_material = SubResource( 4 )
+texture = ExtResource( 1 )

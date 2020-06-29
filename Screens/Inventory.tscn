@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Screens/Inventory.gd" type="Script" id=1]
+[ext_resource path="res://Screens/Items.gd" type="Script" id=2]
+
+[node name="PopupInventory" type="PopupMenu"]
+margin_right = 20.0
+margin_bottom = 20.0
+items = [ "Equipment", null, 0, false, false, 0, 0, null, "", false, "Items", null, 0, false, false, 1, 0, null, "", false, "Unique Items", null, 0, false, false, 2, 0, null, "", false ]
+script = ExtResource( 1 )
+
+[node name="Items" type="PopupMenu" parent="."]
+margin_right = 20.0
+margin_bottom = 20.0
+script = ExtResource( 2 )
+[connection signal="id_pressed" from="." to="Items" method="_on_PopupInventory_id_pressed"]
+[connection signal="about_to_show" from="Items" to="Items" method="_on_Items_about_to_show"]
+[connection signal="id_pressed" from="Items" to="Items" method="_on_Items_id_pressed"]

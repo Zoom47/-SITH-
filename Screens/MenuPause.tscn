@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Screens/PopupMenu.gd" type="Script" id=1]
+[ext_resource path="res://Screens/Inventory.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Screens/AllCharacterStatuts.tscn" type="PackedScene" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
+
+[node name="MenuPause" type="CanvasLayer"]
+pause_mode = 2
+
+[node name="PopupMenu" type="PopupMenu" parent="."]
+margin_left = 459.0
+margin_top = 218.0
+margin_right = 618.0
+margin_bottom = 358.0
+items = [ "Status", ExtResource( 4 ), 0, false, false, 2, 0, null, "", false, "Options", ExtResource( 4 ), 0, false, false, 4, 0, null, "", false, "Resume", ExtResource( 4 ), 0, false, false, 1, 0, null, "", false, "Inventory", ExtResource( 4 ), 0, false, false, 3, 0, null, "", false ]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PopupInventory" parent="PopupMenu" instance=ExtResource( 2 )]
+items = [ "Equipment", null, 0, false, false, 0, 0, null, "", false, "Items", null, 0, false, false, 1, 0, null, "", false, "Unique Items", null, 0, false, false, 2, 0, null, "", false ]
+
+[node name="AllCharacterStatuts" parent="PopupMenu" instance=ExtResource( 3 )]
+[connection signal="about_to_show" from="PopupMenu" to="PopupMenu" method="_on_PopupMenu_about_to_show"]
+[connection signal="id_pressed" from="PopupMenu" to="PopupMenu" method="_on_PopupMenu_id_pressed"]
+[connection signal="popup_hide" from="PopupMenu" to="PopupMenu" method="_on_PopupMenu_popup_hide"]
