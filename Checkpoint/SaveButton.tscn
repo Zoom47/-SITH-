@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Checkpoint/SaveButton.gd" type="Script" id=1]
+[ext_resource path="res://Checkpoint/funnyturtle.png" type="Texture" id=2]
+[ext_resource path="res://assets/ui_theme.tres" type="Theme" id=3]
+
+[node name="SaveButton" type="Button"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.0
+margin_top = -18.5
+margin_right = 125.0
+margin_bottom = 18.5
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 3 )
+text = "Save"
+icon = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_up" from="." to="." method="_on_SaveButton_button_up"]
+[connection signal="hide" from="." to="." method="_on_SaveButton_hide"]
